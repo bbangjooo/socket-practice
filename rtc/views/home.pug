@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title zoom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="./../public/styles/style.css")
+    body
+        h1
+        header 
+            h1.italic Zoom 
+        main
+            div#welcome
+                form
+                    input(type="text", placeholder="room name")
+                    Button Enter
+            div#call.flex-row
+                video#myFace(autoplay, playsinline, width="400", height="400")
+                button#mute Mute
+                button#camera Turn off the camera
+                select#cameras
+                video#peerFace(autoplay, playsinline, width="400", height="400")
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/js/app.js")

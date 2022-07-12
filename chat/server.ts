@@ -1,7 +1,6 @@
 import express, { Request, Response, NextFunction } from "express";
 import http from "http";
 import { Server, Socket } from 'socket.io';
-import WebSocket from "ws";
 
 
 const app = express();
